@@ -1,0 +1,309 @@
+.cards {
+    max-width: 100%;
+    padding-left: 3%;
+    padding-right: 1.5%;
+}
+.cards-scroll {
+    padding-right: 2%;
+}
+.simplebar-track.simplebar-vertical {
+    background: #FFFFFF;
+    border-radius: 100px;
+}
+@media screen and (max-width: 600px) {
+    .simplebar-track.simplebar-vertical {
+        display: none;
+    }
+}
+.simplebar-scrollbar {
+    height: 272px;
+  }
+.simplebar-scrollbar:before {
+    background: rgba(237, 111, 45, 1);
+    border-radius: 100px;
+    opacity: 0.5;
+}
+.card-list {
+    max-width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 16px;
+    grid-auto-rows: 1fr;
+    row-gap: 60px;
+}
+@media screen and (max-width: 1280px) {
+    .card-list {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 14px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .card-list {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 14px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card-list {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .card-list {
+        column-gap: 12px;
+        row-gap: 12px;
+    }
+}
+.card {
+    margin: 0;
+    padding: 30px;
+    max-width: 288px;
+    /* height: 365px; */
+    background: #FFFFFF;
+    backdrop-filter: blur(50px);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card:hover {
+    opacity: 0.5;
+}
+@media screen and (max-width: 560px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 17px;
+        gap: 16px;
+        background: #FFFFFF;
+        backdrop-filter: blur(29.1667px);
+        border-radius: 12px;
+    }
+}
+.card__content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card__img {
+    max-width: 97%;
+}
+@media screen and (max-width: 886px) {
+    .card__img {
+        max-width: 95%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .card__img {
+        max-width: 90%;
+    }
+}
+.card__container {
+    max-width: 100%;
+}
+.card__title {
+    margin-top: 30px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .card__title {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 465px) {
+    .card__title {
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+.card__row-container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 668px) {
+    .card__row-container {
+        gap: 8px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card__row-container {
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .card__row-container {
+        flex-direction: column;
+        gap: 14px;
+    }
+}
+.card__row-item1 {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 480px) {
+    .card__row-item1 {
+        width: 70%;
+        height: 24px;
+        gap: 4;
+    }
+}
+.card__row-img {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media screen and (max-width: 1080px) {
+    .card__row-img {
+        width: 28px;
+        height: 28px;
+    }
+}
+@media screen and (max-width: 820px) {
+    .card__row-img {
+        width: 26px;
+        height: 26px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .card__row-img {
+        width: 24px;
+        height: 24px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .card__row-img {
+        width: 22px;
+        height: 22px;
+    }
+}
+@media screen and (max-width: 668px) {
+    .card__row-img {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .card__row-img {
+        width: 18px;
+        height: 18px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card__row-img {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .card__row-img {
+        width: 24px;
+        height: 24px;
+    }
+}
+.card__row-img_type_pokemonbol {
+    background-image: url(../../images/header-pokemon.svg);
+}
+.card__row-img_type_del {
+    background-image: url(../../images/pokemon-del.svg);
+}
+.card__row-attack {
+    background-image: url(../../images/row-attack4.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60%;
+}
+.card__row-item2 {
+    width: 40%;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 480px) {
+    .card__row-item2 {
+        width: 50%;
+        height: 18px;
+        gap: 4;
+    }
+}
+.card__row-number {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #222222;
+}
+@media screen and (max-width: 768px) {
+    .card__row-number {
+        font-size: 12px;
+        line-height: 100%;
+    }
+}
+@media screen and (max-width: 620px) {
+    .card__row-number {
+        font-size: 10px;
+        line-height: 100%
+    }
+}
+@media screen and (max-width: 600px) {
+    .card__row-number {
+        font-size: 16px;
+        line-height: 100%
+    }
+}
+@media screen and (max-width: 480px) {
+    .card__row-number {
+        font-size: 12px;
+        line-height: 100%;
+    }
+}
+.card__row-copy {
+    background-image: url(../../images/copy.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+@media screen and (max-width: 768px) {
+    .card__row-copy {
+        width: 18px;
+        height: 18px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .card__row-copy {
+        width: 16px;
+        height: 16px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card__row-copy {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .card__row-copy {
+        width: 18px;
+        height: 18px;
+    }
+}
